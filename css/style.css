@@ -9,6 +9,7 @@ ul li {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* header */
@@ -17,7 +18,6 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    border: solid 1px black;
     height: 110px;
     align-items: center;
 }
@@ -90,4 +90,138 @@ a {
 
 .banner img {
     width: 100%;
+    margin-bottom: 35px;
 }
+
+/* productos inicio */
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card-productos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    border: solid 1px red;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: aqua;
+    height: 185px;
+}
+
+.card img {
+    width: 97%;
+    padding: 10px;
+    padding-left: 0;
+    transition: all ease-out 0.8s;
+    height: 165px;
+}
+
+.card img:hover {
+    transform: scale(1.12);
+    transition: all ease-out 0.4s;
+}
+
+.card:last-child,
+.card:nth-child(4){
+    margin-right: 0;
+}
+
+.card:nth-child(5),
+.card:nth-child(6),
+.card:nth-child(7),
+.card:nth-child(8){
+    margin-bottom: 35px;
+}
+
+.card-info {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 33% 33% 50px;
+}
+
+.card-info h3{
+    padding: 20px 0 ;
+}
+
+.card-info p{
+    padding: 10px 0;
+}
+
+.card-info a{
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.card-info a p{
+    border: solid black 1px;
+    color: hotpink;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 6px;
+    transition: all linear 0.2s;
+}
+
+.card-info a p:hover{
+    transform: scale(1.05);
+    opacity: 0.95;
+    background-color: #999;;
+    transition: all linear 0.1s;
+}
+
+.card-info a p:active{
+    opacity: 0.9;
+    background-color: #999;;
+
+}
+
+/* HR */
+
+hr {
+    border: solid 2px;
+    color: gray;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 60%;
+}
+
+/* info */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    column-gap: 200px;
+    margin-bottom: 35px;
+}
+
+.info img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+
+.info div {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+  }
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+
