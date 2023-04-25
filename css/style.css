@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    background-color: rgba(48, 125, 125, 0.721);
+}
+
 ul li {
     list-style: none;
 }
@@ -50,6 +54,7 @@ a {
     grid-template-columns: 70% 30%;
     align-items: center;
     height: 60px;
+    background-color: lightblue;
 }
 
 .nav-menu {
@@ -161,6 +166,7 @@ a {
     align-items: end;
     justify-content: center;
     padding: 10px 0px;
+    cursor: default;
 }
 
 .card-info a p{
@@ -209,6 +215,13 @@ hr {
     width: 70px;
     height: 70px;
     align-self: center;
+    transition: all 0.4s ease-in;
+}
+
+.info img:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+
 }
 
 .info div {
@@ -221,7 +234,68 @@ hr {
 /* footer */
 
 footer {
+    background-color: lightblue;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    width: 90%;
+    margin: auto; 
+}
+footer img {
+    width: 65px;
+    height: 80px;
+    padding: 20px 0;
+}
+
+.footer-productos h3{
+    padding-top: 20px;
+}
+
+.footer-productos a li{
+    transition: all 0.4s ease;
+    margin: 5px 0;
+}
+
+.footer-productos a li:hover{
+    color: gray;
+    transition: all 0.4s ease;
+}
+
+.footer-contacto h3{
+    padding-top: 20px;
+}
+
+.footer-contacto p{
+    margin: 5px 0; 
+}
+
+.footer-contacto i{
+    margin-right: 10px; 
+    margin-top: 5px;
+    transition: all 0.5s ease;
+}
+
+.footer-contacto i:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.footer-cuenta h3 {
+    padding-top: 20px;
+}
+
+.footer-cuenta {
     display: grid;
 }
 
+.footer-cuenta a:hover{
+    color: gray;
+    transition: all 0.4s ease;
+}
+
+.footer-cuenta a{
+    transition: all 0.4s ease;
+}
 
