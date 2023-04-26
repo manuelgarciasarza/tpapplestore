@@ -10,10 +10,21 @@
 .color4 { #141030 };
 .color5 { #050021 };
 */
+/*
+#323435 color body
+#1C1C1C color cards 
+#B5B5B5 color letras
+#5C5C5C color botones
+#696969 color botones 
+*/
+
+
+
+
 
 body{
-    background-color: #231f40;
-    color: white;
+    background-color: #323435;
+    color: #B5B5B5;
     font-family: 'oswald', sans-serif;
 }
 
@@ -23,7 +34,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #B5B5B5;
 }
 
 /* header */
@@ -37,17 +48,15 @@ a {
 }
 
 .header-one .header-logo {
-    width: 65px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin-left: 85px;
 }
 
 .icono-header{
-    width: 32px;
-    height: 20px;
-    border: 1px solid #050021;
+    width: 45px;
+    height: 35px;
     padding:10px;
-    border-radius: 100%;
     margin-right: 15px;
     transition: all 0.8s;
 }
@@ -64,7 +73,7 @@ a {
     grid-template-columns: 70% 30%;
     align-items: center;
     height: 60px;
-    background-color: #050021;
+    background-color: #1C1C1C;
     margin-bottom: 35px;
 }
 
@@ -91,7 +100,8 @@ a {
     height: 30px;
     border: none;
     color: white;
-    background-color: #050021;
+    background-color: #323435;
+    border-radius: 2px;
 }
 
 .buscar img {
@@ -127,18 +137,18 @@ a {
 }
 
 .card {
-    border: solid 2px #050021;
+    border: solid 2px black;
     border-radius: 2px;
     display: grid;
     grid-template-columns: 55% 45%;
     margin-bottom: 15px;
     margin-right: 10px;
-    background-color: #050021;
+    background-color: #1C1C1C;
     height: 185px;
 }
 
 .card img {
-    width: 97%;
+    width: 121px;
     padding: 10px;
     padding-left: 0;
     transition: all ease-out 0.8s;
@@ -172,6 +182,10 @@ a {
     padding: 20px 0 ;
 }
 
+.card-info h3 {
+    color: white;
+}
+
 .card-info p{
     padding: 10px 0;
 }
@@ -186,7 +200,7 @@ a {
 
 .card-info a p{
     border: solid black 1px;
-    background-color: #231f40;
+    background-color: #5C5C5C;
     padding: 5px;
     border-radius: 6px;
     transition: all linear 0.2s;
@@ -195,13 +209,13 @@ a {
 .card-info a p:hover{
     transform: scale(1.05);
     opacity: 0.95;
-    background-color: #322f4f;;
+    background-color: #696969;;
     transition: all linear 0.1s;
 }
 
 .card-info a p:active{
     opacity: 0.9;
-    background-color: #231f40;
+    background-color: #5C5C5C;
 
 }
 
@@ -209,7 +223,7 @@ a {
 
 hr {
     border: solid 2px;
-    color: #050021;
+    color: #1C1C1C;
     margin: auto;
     margin-bottom: 35px;
     width: 60%;
@@ -226,8 +240,8 @@ hr {
 }
 
 .info img {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     align-self: center;
     transition: all 0.4s ease-in;
 }
@@ -240,15 +254,17 @@ hr {
 
 .info div {
     display: grid;
-    grid-template-rows: auto 1fr;
-    grid-gap: 10px;
     justify-items: center;
   }
+
+.info p{
+    text-align: center;
+}
 
 /* footer */
 
 footer {
-    background-color: #050021;
+    background-color: #1C1C1C;
 }
 
 .footer-content{
@@ -258,8 +274,8 @@ footer {
     margin: auto; 
 }
 footer img {
-    width: 65px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     padding: 20px 0;
 }
 
